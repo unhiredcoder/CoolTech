@@ -1,0 +1,640 @@
+{
+    "navbar": {
+        "logo": {
+            "title": "CoolTech",
+            "subtitle": "AC REPAIR SERVICES"
+        },
+        "phone": "+1 (555) 123-4567",
+        "ctaButton": "Book Service",
+        "links": [
+            {
+                "label": "Home",
+                "href": "/"
+            },
+            {
+                "label": "Services",
+                "href": "/services"
+            },
+            {
+                "label": "F.A.Q",
+                "href": "/faq"
+            },
+            {
+                "label": "Contact",
+                "href": "/contact"
+            }
+        ],
+        "aboutDropdown": [
+            {
+                "label": "Company Overview",
+                "href": "/about/overview"
+            },
+            {
+                "label": "Directors",
+                "href": "/about/directors"
+            },
+            {
+                "label": "Awards & Achievements",
+                "href": "/about/achievements"
+            },
+            {
+                "label": "Services We Offer",
+                "href": "/about/services"
+            }
+        ]
+    },
+    "heroSection": {
+        "badgeText": "Premium AC Services",
+        "title": "Reliable AC Repair & Installation Services",
+        "highlightWords": [
+            "AC Repair",
+            "Installation"
+        ],
+        "subtitle": "Expert air conditioning solutions for homes and businesses. Fast, affordable, and 100% satisfaction guaranteed.",
+        "ctaButtons": [
+            {
+                "text": "Book a Service",
+                "style": "primary"
+            },
+            {
+                "text": "View Services",
+                "style": "secondary"
+            }
+        ],
+        "heroImage": "/src/assets/image.png",
+        "stats": [
+            {
+                "icon": "Users",
+                "value": "1000+",
+                "label": "Happy Customers"
+            },
+            {
+                "icon": "Clock",
+                "value": "24/7",
+                "label": "Emergency Service"
+            }
+        ]
+    },
+    "servicesSection": {
+        "badgeText": "Our Services",
+        "heading": "Our AC Services",
+        "subtext": "Comprehensive air conditioning solutions for all your cooling needs",
+        "services": [
+            {
+                "icon": "Settings",
+                "title": "AC Installation",
+                "description": "Expert installation of new AC systems, ensuring correct sizing and optimal placement for peak efficiency and comfort.",
+                "buttonText": "Learn More"
+            },
+            {
+                "icon": "Wrench",
+                "title": "AC Repair & Troubleshooting",
+                "description": "Fast and reliable repair services for all AC brands with expert diagnostics and genuine parts.",
+                "buttonText": "Learn More"
+            },
+            {
+                "icon": "Snowflake",
+                "title": "Gas Refilling",
+                "description": "Professional refrigerant refilling and leak detection to restore your AC's cooling performance.",
+                "buttonText": "Learn More"
+            },
+            {
+                "icon": "Shield",
+                "title": "Annual Maintenance Plans",
+                "description": "Comprehensive maintenance packages to keep your AC running efficiently year-round.",
+                "buttonText": "Learn More"
+            }
+        ]
+    },
+    "whyChooseUsSection": {
+        "badgeText": "Why Choose Us",
+        "heading": "Why Choose Our Services?",
+        "highlightWord": "Services",
+        "subtext": "Experience the difference with our professional, reliable, and customer-focused approach",
+        "features": [
+            {
+                "icon": "Shield",
+                "title": "Certified Technicians",
+                "desc": "Licensed and experienced professionals with extensive training"
+            },
+            {
+                "icon": "Clock",
+                "title": "Same-Day Service",
+                "desc": "Quick response times with same-day service availability"
+            },
+            {
+                "icon": "DollarSign",
+                "title": "Affordable Pricing",
+                "desc": "Competitive rates with transparent pricing and no hidden fees"
+            },
+            {
+                "icon": "Search",
+                "title": "Free Site Inspection",
+                "desc": "Complimentary assessment and detailed quotes for all services"
+            },
+            {
+                "icon": "Users",
+                "title": "1000+ Happy Customers",
+                "desc": "Proven track record with thousands of satisfied customers"
+            },
+            {
+                "icon": "MessageCircle",
+                "title": "24/7 Support",
+                "desc": "Round-the-clock customer support and emergency services"
+            }
+        ]
+    },
+    "testimonialSection": {
+        "heading": "What Our Customers Say",
+        "highlightWord": "Customers",
+        "subtext": "Real feedback from our satisfied customers",
+        "testimonials": [
+            {
+                "text": "Excellent service! They fixed our AC quickly and professionally. The technician was knowledgeable and explained everything clearly. Highly recommended!",
+                "name": "Sarah Johnson",
+                "role": "Homeowner"
+            },
+            {
+                "text": "Fast, reliable, and affordable. They installed our new AC system perfectly and provided great maintenance tips. Outstanding customer service!",
+                "name": "Mike Davis",
+                "role": "Business Owner"
+            },
+            {
+                "text": "Professional team with fair pricing. They diagnosed the problem quickly and had our AC running perfectly. Will definitely use them again!",
+                "name": "Lisa Chen",
+                "role": "Property Manager"
+            }
+        ]
+    },
+    "contactSection": {
+        "heading": "Contact Us",
+        "subtext": "Get in touch with us for any questions, service requests, or to learn more about our AC solutions",
+        "formTitle": "Send Us a Message",
+        "formSubtitle": "We'll get back to you within 24 hours",
+        "address": {
+            "lines": [
+                "123 Service Street",
+                "Cool City, CC 12345",
+                "United States"
+            ],
+            "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60244.801732406736!2d72.80893746232493!3d19.417858781507754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ab166a2cfb8d%3A0x9c0c761e0ef3a9d2!2sCapital%20Mall!5e0!3m2!1sen!2sin!4v1692780250011!5m2!1sen!2sin"
+        },
+        "contactDetails": {
+            "phone": "+91 98765 43210",
+            "email": "support@cooltech.in",
+            "businessHours": [
+                "Mon–Fri: 9:00 AM – 6:00 PM",
+                "Sat–Sun: 10:00 AM – 4:00 PM"
+            ]
+        },
+        "socialLinks": [
+            {
+                "platform": "Facebook",
+                "url": "#"
+            },
+            {
+                "platform": "Twitter",
+                "url": "#"
+            },
+            {
+                "platform": "Instagram",
+                "url": "#"
+            },
+            {
+                "platform": "Linkedin",
+                "url": "#"
+            }
+        ]
+    },
+    "footer": {
+        "companyName": "CoolTech",
+        "tagline": "AC REPAIR SERVICES",
+        "description": "Your trusted partner for all AC repair and installation needs. Professional service, guaranteed satisfaction, and 24/7 emergency support.",
+        "socialLinks": [
+            "Facebook",
+            "Twitter",
+            "Instagram",
+            "Linkedin"
+        ],
+        "servicesLinks": [
+            "AC Installation",
+            "AC Repair & Troubleshooting",
+            "Gas Refilling",
+            "Annual Maintenance Plans",
+            "Emergency Service"
+        ],
+        "quickLinks": [
+            "Home",
+            "About",
+            "Contact",
+            "Terms of Service",
+            "Privacy Policy"
+        ],
+        "contact": {
+            "phone": "+1 (555) 123-COOL",
+            "email": "info@cooltech.com",
+            "addressLine1": "123 Service Street",
+            "addressLine2": "Cool City, CC 12345",
+            "hours": "24/7 Emergency Service"
+        },
+        "copyright": "© 2024 CoolTech AC Repair Services. All rights reserved. | Licensed & Insured HVAC Contractor"
+    },
+    "achievements": {
+        "title": "Awards & Achievements",
+        "subtitle": "Recognition of our commitment to excellence and outstanding service in the HVAC industry",
+        "awards": [
+            {
+                "icon": "Star",
+                "title": "Best HVAC Service 2023",
+                "subtitle": "Regional Excellence Award",
+                "description": "Recognized for outstanding customer service and technical expertise in residential and commercial HVAC solutions.",
+                "iconGradient": [
+                    "from-[#e63946]",
+                    "to-[#dc2626]"
+                ]
+            },
+            {
+                "icon": "Shield",
+                "title": "Safety Excellence Award",
+                "subtitle": "Industry Safety Council",
+                "description": "Awarded for maintaining the highest safety standards and zero workplace accidents for three consecutive years.",
+                "iconGradient": [
+                    "from-[#0b1120]",
+                    "to-gray-800"
+                ]
+            },
+            {
+                "icon": "Users",
+                "title": "Customer Choice Award",
+                "subtitle": "Local Business Association",
+                "description": "Voted #1 AC repair service by customers for exceptional service quality and customer satisfaction ratings.",
+                "iconGradient": [
+                    "from-[#e63946]",
+                    "to-[#dc2626]"
+                ]
+            },
+            {
+                "icon": "Settings",
+                "title": "Innovation in HVAC",
+                "subtitle": "Tech Innovation Awards",
+                "description": "Recognized for implementing smart HVAC solutions and energy-efficient technologies in residential projects.",
+                "iconGradient": [
+                    "from-[#0b1120]",
+                    "to-gray-800"
+                ]
+            },
+            {
+                "icon": "DollarSign",
+                "title": "Best Value Service",
+                "subtitle": "Consumer Reports",
+                "description": "Awarded for providing the best value combination of quality service, competitive pricing, and customer support.",
+                "iconGradient": [
+                    "from-[#e63946]",
+                    "to-[#dc2626]"
+                ]
+            },
+            {
+                "icon": "Clock",
+                "title": "15 Years of Excellence",
+                "subtitle": "Milestone Achievement",
+                "description": "Celebrating 15 years of continuous service excellence with over 10,000 satisfied customers and growing.",
+                "iconGradient": [
+                    "from-[#0b1120]",
+                    "to-gray-800"
+                ]
+            }
+        ],
+        "projectStats": [
+            {
+                "icon": "Building2",
+                "number": "150+",
+                "label": "Projects Completed",
+                "iconGradient": [
+                    "from-[#e63946]",
+                    "to-[#dc2626]"
+                ]
+            },
+            {
+                "icon": "Users",
+                "number": "500+",
+                "label": "Satisfied Clients",
+                "iconGradient": [
+                    "from-[#0b1120]",
+                    "to-gray-800"
+                ]
+            },
+            {
+                "icon": "Calendar",
+                "number": "15+",
+                "label": "Years Experience",
+                "iconGradient": [
+                    "from-[#e63946]",
+                    "to-[#dc2626]"
+                ]
+            },
+            {
+                "icon": "CheckCircle",
+                "number": "100%",
+                "label": "Success Rate",
+                "iconGradient": [
+                    "from-[#0b1120]",
+                    "to-gray-800"
+                ]
+            }
+        ],
+        "caseStudies": [
+            {
+                "title": "Complete HVAC Overhaul",
+                "location": "Metro Hospital, Downtown",
+                "image": "https://i.pinimg.com/736x/65/91/b7/6591b7139082c6371bd669a11ec5f507.jpg",
+                "description": "A comprehensive HVAC system upgrade for a 500-bed hospital facility, including installation of energy-efficient chillers, air handling units, and a sophisticated building management system.",
+                "points": [
+                    "40% reduction in energy consumption",
+                    "Improved air quality and patient comfort",
+                    "24/7 monitoring and maintenance support"
+                ]
+            },
+            {
+                "title": "Smart Climate Control System",
+                "location": "Grand Shopping Mall",
+                "image": "https://i.pinimg.com/736x/65/91/b7/6591b7139082c6371bd669a11ec5f507.jpg",
+                "description": "Implementation of an intelligent HVAC system for a 2-million sq ft shopping complex, featuring zone control, occupancy sensors, and automated temperature management.",
+                "points": [
+                    "Smart zone-based temperature control",
+                    "Integrated with building automation",
+                    "35% operational cost savings"
+                ]
+            }
+        ],
+        "gallery": {
+            "title": "Project Gallery",
+            "subtitle": "Explore our portfolio of successful infrastructure projects across various sectors.",
+            "images": [
+                {
+                    "url": "https://i.pinimg.com/736x/03/d7/70/03d7704dad409f8713915bcee69314b1.jpg",
+                    "title": "Commercial Complex",
+                    "description": "HVAC Installation"
+                },
+                {
+                    "url": "https://i.pinimg.com/736x/fd/6f/70/fd6f70db8f0d7b2ca9bbbce6d474832c.jpg",
+                    "title": "Industrial Facility",
+                    "description": "Chiller System Setup"
+                },
+                {
+                    "url": "https://i.pinimg.com/736x/7f/47/52/7f4752139c90fc096cd4a4ab946178c2.jpg",
+                    "title": "Corporate Office",
+                    "description": "Ducting & Ventilation"
+                },
+                {
+                    "url": "https://i.pinimg.com/736x/fd/6f/70/fd6f70db8f0d7b2ca9bbbce6d474832c.jpg",
+                    "title": "Hospital Project",
+                    "description": "Central AC System"
+                },
+                {
+                    "url": "https://i.pinimg.com/736x/96/5d/a9/965da921d3c719f7d9ffa9a5daa503ae.jpg",
+                    "title": "Shopping Mall",
+                    "description": "Complete HVAC Solution"
+                },
+                {
+                    "url": "https://i.pinimg.com/736x/58/47/b8/5847b80c513687995a0c6af2de041a86.jpg",
+                    "title": "Residential Complex",
+                    "description": "HVAC Installation"
+                }
+            ]
+        }
+    },
+    "directors": {
+        "title": "Our LeaderShip",
+        "subtitle": "Meet the people driving CoolTech’s vision forward.",
+        "list": [
+            {
+                "name": "John Mitchell",
+                "role": "Chief Executive Officer",
+                "description": "Leads CoolTech with innovation and over 20 years of HVAC expertise.",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5I1P8P6p8eU0gGAofbAYmIm6dcnbY0vNQ&s"
+            },
+            {
+                "name": "Sarah Thompson",
+                "role": "Chief Technology Officer",
+                "description": "Expert in smart HVAC systems and mechanical engineering.",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5I1P8P6p8eU0gGAofbAYmIm6dcnbY0vNQ&s"
+            },
+            {
+                "name": "Michael Rodriguez",
+                "role": "Operations Director",
+                "description": "Oversees field ops and guarantees top-tier service.",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5I1P8P6p8eU0gGAofbAYmIm6dcnbY0vNQ&s"
+            },
+            {
+                "name": "Jane Doe",
+                "role": "Finance Director",
+                "description": "Keeps the numbers tight and the vision tighter.",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5I1P8P6p8eU0gGAofbAYmIm6dcnbY0vNQ&s"
+            },
+            {
+                "name": "Michael Rodriguez",
+                "role": "Operations Director",
+                "description": "Oversees field ops and guarantees top-tier service.",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5I1P8P6p8eU0gGAofbAYmIm6dcnbY0vNQ&s"
+            },
+            {
+                "name": "Jane Doe",
+                "role": "Finance Director",
+                "description": "Keeps the numbers tight and the vision tighter.",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5I1P8P6p8eU0gGAofbAYmIm6dcnbY0vNQ&s"
+            }
+        ]
+    },
+    "companyOverview": {
+        "heading": "Areas We Cater",
+        "subheading": "Comprehensive HVAC solutions across diverse sectors - from infrastructure projects to specialized installations, we deliver excellence in every domain.",
+        "ctaButtons": [
+            {
+                "text": "Explore Our Work",
+                "type": "primary"
+            },
+            {
+                "text": "Get Quote",
+                "type": "outline"
+            }
+        ]
+    },
+    "expertiseAreas": [
+        {
+            "title": "Infrastructure Projects",
+            "description": "Large-scale HVAC solutions for commercial buildings, hospitals, shopping malls, and industrial complexes. Complete climate control systems designed for maximum efficiency.",
+            "image": "https://i.pinimg.com/736x/58/47/b8/5847b80c513687995a0c6af2de041a86.jpg",
+            "icon": "Building2",
+            "link": "/infrastructure-projects",
+            "buttonText": "View Projects",
+            "gradient": "from-[#e63946] to-[#dc2626]"
+        },
+        {
+            "title": "Chiller Pipe Installation",
+            "description": "Professional chiller piping systems with precision installation, leak testing, and insulation. Ensuring optimal cooling performance and energy efficiency.",
+            "image": "https://i.pinimg.com/736x/57/d6/85/57d68517ddb37d0f2689be632a16d2be.jpg",
+            "icon": "Settings",
+            "link": "/chiller-pipe-installation",
+            "buttonText": "Learn Process",
+            "gradient": "from-[#0b1120] to-gray-800"
+        },
+        {
+            "title": "VRF Planning & Installation",
+            "description": "Variable Refrigerant Flow systems with advanced planning and precise installation. Energy-efficient solutions for multi-zone climate control.",
+            "image": "https://i.pinimg.com/736x/24/2b/8c/242b8cc6d06ef983f60e23129c84ff3e.jpg",
+            "icon": "Snowflake",
+            "link": "/vrf-planning-installation",
+            "buttonText": "Explore VRF",
+            "gradient": "from-[#e63946] to-[#dc2626]"
+        },
+        {
+            "title": "MEP Solutions",
+            "description": "Comprehensive Mechanical, Electrical & Plumbing solutions integrated with HVAC systems. Complete building services for optimal performance.",
+            "image": "https://i.pinimg.com/736x/6d/66/af/6d66af4d10a9a7d19d1df880b0ce3b23.jpg",
+            "icon": "Wrench",
+            "buttonText": "View Solutions",
+            "gradient": "from-[#0b1120] to-gray-800"
+        }
+    ],
+    "installationServices": {
+        "title": "Installation Services",
+        "description": "Our systematic approach ensures precise installation and optimal performance of your chiller piping system",
+        "steps": [
+            {
+                "step": "1",
+                "icon": "Gauge",
+                "title": "Site Assessment",
+                "description": "Comprehensive evaluation of the installation site, load calculations, and system requirements analysis."
+            },
+            {
+                "step": "2",
+                "icon": "Settings",
+                "title": "System Design",
+                "description": "Custom piping layout design with optimal routing, sizing, and component selection for maximum efficiency."
+            },
+            {
+                "step": "3",
+                "icon": "Wrench",
+                "title": "Precision Installation",
+                "description": "Professional installation with proper welding, fitting, and insulation using industry-standard techniques."
+            },
+            {
+                "step": "4",
+                "icon": "CheckCircle",
+                "title": "Testing & Commissioning",
+                "description": "Comprehensive leak testing, pressure testing, and system commissioning to ensure optimal performance."
+            }
+        ]
+    },
+    "installationBenefits": {
+        "title": "Benefits of Professional Installation",
+        "description": "Why choose our expert chiller pipe installation services for your facility",
+        "benefits": [
+            {
+                "icon": "Zap",
+                "title": "Energy Efficiency",
+                "description": "Optimized piping design reduces energy consumption and operational costs by up to 30%"
+            },
+            {
+                "icon": "Shield",
+                "title": "Leak-Proof System",
+                "description": "Professional welding and fitting techniques ensure zero leakage and long-term reliability"
+            },
+            {
+                "icon": "Thermometer",
+                "title": "Optimal Performance",
+                "description": "Precise temperature control and consistent cooling performance across all zones"
+            },
+            {
+                "icon": "Clock",
+                "title": "Extended Lifespan",
+                "description": "Quality installation extends equipment life and reduces maintenance requirements"
+            },
+            {
+                "icon": "Settings",
+                "title": "Smart Integration",
+                "description": "Seamless integration with building management systems for automated control"
+            },
+            {
+                "icon": "Wrench",
+                "title": "Easy Maintenance",
+                "description": "Accessible design and quality components make future maintenance simple and cost-effective"
+            }
+        ]
+    },
+    "serviceHighlights": {
+        "title": "Service Highlights",
+        "description": "What sets our chiller pipe installation services apart from the competition",
+        "highlights": [
+            {
+                "title": "Certified Technicians",
+                "description": "Our team consists of certified professionals with extensive experience in chiller system installations and industry best practices."
+            },
+            {
+                "title": "Quality Materials",
+                "description": "We use only premium-grade pipes, fittings, and insulation materials from trusted manufacturers to ensure long-lasting performance."
+            },
+            {
+                "title": "Comprehensive Testing",
+                "description": "Every installation undergoes rigorous pressure testing, leak detection, and performance verification to guarantee optimal system operation."
+            },
+            {
+                "title": "Warranty & Support",
+                "description": "All installations come with comprehensive warranty coverage and ongoing maintenance support to ensure continued performance."
+            }
+        ],
+        "image": "https://i.pinimg.com/736x/fd/6f/70/fd6f70db8f0d7b2ca9bbbce6d474832c.jpg"
+    },
+    "quickLinks": [
+        {
+            "title": "Project Gallery",
+            "description": "Browse through our extensive portfolio of completed projects, installations, and satisfied customers across different sectors.",
+            "link": "/about/achievements",
+            "icon": "Camera",
+            "gradient": "from-[#e63946] to-[#dc2626]",
+            "buttonText": "View Gallery"
+        },
+        {
+            "title": "Awards & Recognition",
+            "description": "Discover the awards and recognition we've received for our excellence in HVAC services and customer satisfaction.",
+            "link": "/about/achievements",
+            "icon": "Trophy",
+            "gradient": "from-[#0b1120] to-gray-800",
+            "buttonText": "View Awards"
+        }
+    ],
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about our services, pricing, and more",
+        "faqs": [
+            {
+                "question": "How quickly can you respond to emergency AC repairs?",
+                "answer": "We offer 24/7 emergency AC repair services and typically respond within 1-2 hours of your call. Our emergency technicians are equipped with common parts and tools to resolve most issues on the first visit. We understand that AC failures can be critical, especially during extreme weather conditions, so we prioritize emergency calls to restore your comfort as quickly as possible."
+            },
+            {
+                "question": "What's included in your annual maintenance plans?",
+                "answer": "Our comprehensive annual maintenance plans include bi-annual system inspections, filter replacements, coil cleaning, refrigerant level checks, electrical connection inspections, thermostat calibration, and priority scheduling for repairs. Members also receive 15% discounts on parts and labor, extended warranties, and free emergency service calls. Regular maintenance can extend your system's lifespan by up to 40% and improve energy efficiency significantly."
+            },
+            {
+                "question": "How do I know if I need AC repair or replacement?",
+                "answer": "Consider replacement if your AC is over 10-15 years old, requires frequent repairs, has rising energy bills, or struggles to maintain comfortable temperatures. Signs you need repair include unusual noises, weak airflow, warm air from vents, frequent cycling, or moisture around the unit. Our technicians provide honest assessments and will recommend the most cost-effective solution. We offer free consultations to help you make the best decision for your situation and budget."
+            },
+            {
+                "question": "Do you provide warranties on your work and parts?",
+                "answer": "Yes, we provide comprehensive warranties on all our work. Labor warranties range from 1-2 years depending on the service, while parts warranties vary by manufacturer (typically 5-10 years for major components). New system installations come with extended warranties up to 10 years on parts and 2 years on labor. We also offer extended warranty options for additional peace of mind. All warranty terms are clearly explained before any work begins."
+            },
+            {
+                "question": "What factors affect the cost of AC installation?",
+                "answer": "AC installation costs depend on several factors: system size and efficiency rating, type of unit (central air, ductless, etc.), existing ductwork condition, electrical requirements, installation complexity, and local permits. Higher efficiency units cost more upfront but save money long-term through reduced energy bills. We provide detailed, transparent quotes that break down all costs. Our financing options make quality installations affordable with flexible payment plans."
+            },
+            {
+                "question": "How often should I change my AC filters?",
+                "answer": "Standard 1-inch filters should be changed every 1-3 months, depending on usage, pets, and air quality. Thicker pleated filters (4-5 inches) can last 6-12 months. Check filters monthly - if they look dirty or clogged, replace them immediately. Dirty filters reduce efficiency, increase energy costs, and can damage your system. We can set up automatic filter delivery services and provide reminders to help you maintain optimal system performance."
+            },
+            {
+                "question": "Are your technicians licensed and insured?",
+                "answer": "Absolutely. All our technicians are fully licensed, bonded, and insured. They undergo continuous training to stay current with the latest HVAC technologies and safety protocols. Our company carries comprehensive liability insurance and workers' compensation coverage. We can provide proof of licensing and insurance upon request. Our technicians also wear uniforms and carry photo identification for your security and peace of mind."
+            }
+        ]
+    }
+}
