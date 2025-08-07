@@ -1,8 +1,8 @@
 import { Card, CardContent } from './ui/card'
 import { Button } from "./ui/button"
 import {
-    Building2, Snowflake, CheckCircle, Users, Calendar, MapPin,
-    ArrowRight, Clock, DollarSign, Settings, Shield, Star
+    Building2, CheckCircle, Users, Calendar, MapPin,
+    Clock, DollarSign, Settings, Shield, Star
 } from "lucide-react"
 import data from "../lib/data.json"
 
@@ -15,33 +15,33 @@ const Achievements = () => {
     const { title, subtitle, awards, projectStats, caseStudies, gallery } = data.achievements;
     const { images } = gallery;
     return (
-        <section id="awards" className="mt-10 sm:mt-15 py-16 sm:py-20 bg-white px-4 sm:px-6 md:px-8">
+        <section id="awards" className="page">
             <div className="container mx-auto">
                 <div className="text-center mb-12 sm:mb-16">
                     <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
-                        <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
-                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1120]">
+                        <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
+                        <h2 className="heading">
                             {title.split(' ')[0]} &{" "}
-                            <span className="bg-[#e63946] text-2xl sm:text-4xl lg:text-5xl  text-white px-3 py-1 rounded-full shadow-md">
+                            <span className="text-primary">
                                 Achievenment
                             </span>
                         </h2>
-                        <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
+                        <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
                     </div>
-                    <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">{subtitle}</p>
+                    <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
                     {awards.map((award, idx) => {
                         const Icon = iconComponents[award.icon as keyof typeof iconComponents];
                         return (
-                            <Card key={idx} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-[#f6f7fb] rounded-3xl hover:-translate-y-2">
+                            <Card key={idx} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-background to-muted rounded-3xl hover:-translate-y-2">
                                 <CardContent className="p-6 sm:p-8 text-center">
                                     <div className={`w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-r ${award.iconGradient.join(' ')} rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform`}>
-                                        <Icon className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+                                        <Icon className="w-8 sm:w-10 h-8 sm:h-10 text-background" />
                                     </div>
-                                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-[#0b1120]">{award.title}</h3>
-                                    <p className="text-gray-600 text-sm sm:text-base mb-2 sm:mb-4">{award.subtitle}</p>
+                                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{award.title}</h3>
+                                    <p className="text-muted-foreground text-sm sm:text-base mb-2 sm:mb-4">{award.subtitle}</p>
                                     <p className="text-xs sm:text-sm text-gray-500">{award.description}</p>
                                 </CardContent>
                             </Card>
@@ -61,8 +61,8 @@ const Achievements = () => {
                                     <div className={`w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-r ${stat.iconGradient.join(' ')} rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4`}>
                                         <Icon className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
                                     </div>
-                                    <div className="text-2xl sm:text-3xl font-bold text-[#0b1120] mb-1 sm:mb-2">{stat.number}</div>
-                                    <div className="text-gray-600 text-sm sm:text-base">{stat.label}</div>
+                                    <div className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">{stat.number}</div>
+                                    <div className="text-muted-foreground text-sm sm:text-base">{stat.label}</div>
                                 </Card>
                             );
                         })}
@@ -75,11 +75,11 @@ const Achievements = () => {
                 <div className="container mx-auto">
                     <div className="text-center mb-12 sm:mb-16">
                         <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
-                            <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1120]">{gallery.title}</h2>
-                            <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
+                            <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">{gallery.title}</h2>
+                            <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
                         </div>
-                        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">{gallery.subtitle}</p>
+                        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">{gallery.subtitle}</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -88,7 +88,7 @@ const Achievements = () => {
                                 <div className="relative overflow-hidden aspect-[16/9]">
                                     <img src={item.url} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <h4 className="font-bold text-sm sm:text-lg">{item.title}</h4>
                                         <p className="text-xs sm:text-sm">{item.description}</p>
                                     </div>
@@ -104,11 +104,11 @@ const Achievements = () => {
                 <div className="container mx-auto">
                     <div className="text-center mb-12 sm:mb-16">
                         <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
-                            <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1120]">Featured Case Studies</h2>
-                            <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
+                            <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Featured Case Studies</h2>
+                            <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
                         </div>
-                        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">Detailed insights into our most successful infrastructure projects</p>
+                        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">Detailed insights into our most successful infrastructure projects</p>
                     </div>
 
                     <div className="space-y-12 sm:space-y-16">
@@ -123,8 +123,8 @@ const Achievements = () => {
                                         <MapPin className="w-4 sm:w-5 h-4 sm:h-5 text-[#e63946]" />
                                         <span className="text-[#e63946] font-semibold text-sm sm:text-base">{study.location}</span>
                                     </div>
-                                    <h3 className="text-2xl sm:text-3xl font-bold text-[#0b1120] mb-4 sm:mb-6">{study.title}</h3>
-                                    <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">{study.description}</p>
+                                    <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">{study.title}</h3>
+                                    <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 sm:mb-6">{study.description}</p>
                                     <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                                         {study.points.map((point, pIdx) => (
                                             <div key={pIdx} className="flex items-center gap-2 sm:gap-3">
@@ -133,7 +133,7 @@ const Achievements = () => {
                                             </div>
                                         ))}
                                     </div>
-                                    <Button className="bg-[#e63946] hover:bg-[#dc2626] text-white font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full">
+                                    <Button className="bg-primary hover:bg-[#dc2626] font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full">
                                         View Full Case Study
                                     </Button>
                                 </div>

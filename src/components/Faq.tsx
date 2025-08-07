@@ -16,9 +16,9 @@ const FaqSection = () => {
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-3 mb-4">
                         <HelpCircle className="w-8 h-8 text-[#e63946]" />
-                        <h2 className="text-4xl lg:text-5xl font-extrabold text-[#0b1120]">{faq.title}</h2>
+                        <h2 className="text-4xl lg:text-5xl font-bold">{faq.title}</h2>
                     </div>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                         {faq.subtitle}
                     </p>
                 </div>
@@ -31,10 +31,10 @@ const FaqSection = () => {
                                 value={`item-${index + 1}`}
                                 className="bg-white  border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 px-6 py-2"
                             >
-                                <AccordionTrigger className="bg-white text-left hover:text-[#e63946] transition-colors duration-300 text-lg font-semibold text-[#0b1120] hover:no-underline">
+                                <AccordionTrigger className="bg-white text-left hover:text-[#e63946] transition-colors duration-300 text-lg font-semibold hover:no-underline">
                                     {item.question}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-600 leading-relaxed pt-2 pb-4">
+                                <AccordionContent className="text-muted-foreground leading-relaxed pt-2 pb-4">
                                     {item.answer}
                                 </AccordionContent>
                             </AccordionItem>
@@ -43,7 +43,7 @@ const FaqSection = () => {
 
                     {/* CTA Button */}
                     <div className="text-center mt-12">
-                        <Button className="bg-gradient-to-r from-[#e63946] to-[#dc2626] hover:from-[#dc2626] hover:to-[#b91c1c] text-white font-bold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl hover:shadow-[#e63946]/25 transition-all transform hover:scale-105 hover:-translate-y-1">
+                        <Button className="bg-gradient-to-r from-[#e63946] to-[#dc2626] hover:from-[#dc2626] hover:to-[#b91c1c] font-bold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl hover:shadow-[#e63946]/25 transition-all transform hover:scale-105 hover:-translate-y-1">
                             <MessageCircle className="w-5 h-5 mr-2" />
                             Still have questions?
                         </Button>

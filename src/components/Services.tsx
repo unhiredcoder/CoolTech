@@ -22,11 +22,11 @@ const Services = () => {
             {servicesData.badgeText}
           </Badge>
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-1 bg-[#e63946] rounded-full"></div>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-[#0b1120]">{servicesData.heading}</h2>
-            <div className="w-12 h-1 bg-[#e63946] rounded-full"></div>
+            <div className="w-12 h-1 bg-primary rounded-full"></div>
+            <h2 className="text-4xl lg:text-5xl font-bold">{servicesData.heading}</h2>
+            <div className="w-12 h-1 bg-primary rounded-full"></div>
           </div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {servicesData.subtext}
           </p>
         </div>
@@ -41,10 +41,10 @@ const Services = () => {
               >
                 <CardContent className="p-8 text-center">
                   <div className="w-20 h-20 bg-gradient-to-r from-[#e63946] to-[#dc2626] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-10 h-10 text-white drop-shadow" />
+                    <Icon className="w-10 h-10 drop-shadow" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#0b1120] tracking-tight">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6 text-base">{service.description}</p>
+                  <h3 className="text-xl font-semibold mb-3 tracking-tight">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-base">{service.description}</p>
                   <Button
                     variant="ghost"
                     className="text-[#e63946] hover:text-[#dc2626] font-semibold group transition-colors"

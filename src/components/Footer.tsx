@@ -22,7 +22,7 @@ const Footer = () => {
   const footer = data.footer;
 
   return (
-    <footer className="bg-[#0b1120] text-white py-16 px-8">
+    <footer className="bg-[#0b1120] py-16 px-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -32,7 +32,7 @@ const Footer = () => {
                 <Snowflake className="w-7 h-7 text-white" />
               </div>
               <div>
-                <span className="text-2xl font-extrabold">{footer.companyName}</span>
+                <span className="text-2xl font-bold">{footer.companyName}</span>
                 <div className="text-xs text-gray-400">{footer.tagline}</div>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 return (
                   <div
                     key={i}
-                    className="w-10 h-10 bg-[#e63946] rounded-full flex items-center justify-center hover:bg-[#dc2626] transition-colors cursor-pointer"
+                    className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-[#dc2626] transition-colors cursor-pointer"
                   >
                     <Icon className="w-5 h-5" />
                   </div>
@@ -58,7 +58,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               {footer.servicesLinks.map((service, i) => (
                 <li key={i}>
-                  <a href="#" className="!text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="!text-gray-400 hover:transition-colors">
                     {service}
                   </a>
                 </li>
@@ -72,7 +72,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               {footer.quickLinks.map((link, i) => (
                 <li key={i}>
-                  <a href="#" className="!text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="!text-gray-400 hover:transition-colors">
                     {link}
                   </a>
                 </li>

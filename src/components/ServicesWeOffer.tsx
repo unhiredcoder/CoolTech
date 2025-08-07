@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Zap,
   Shield,
@@ -10,9 +8,7 @@ import {
   CheckCircle,
   Camera,
   Trophy,
-  ArrowRight,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import data from "../lib/data.json";
 
@@ -34,10 +30,10 @@ const ServicesWeOffer = () => {
       <section className="mt-10 sm:mt-20 px-4 sm:px-6 md:px-8 lg:px-20 py-16 sm:py-20 bg-gradient-to-br from-[#f6f7fb] to-[#eaf6fb]/50">
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1120] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               {data.installationBenefits.title}
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               {data.installationBenefits.description}
             </p>
           </div>
@@ -50,13 +46,13 @@ const ServicesWeOffer = () => {
                   key={index}
                   className="text-center group hover:shadow-lg p-6 rounded-3xl bg-white transition-all"
                 >
-                  <div className="w-16 sm:w-20 h-16 sm:h-20 bg-[#e63946] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-16 sm:w-20 h-16 sm:h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                     <Icon className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-3 text-[#0b1120]">
+                  <h3 className="text-lg sm:text-xl font-bold mb-3">
                     {benefit.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
@@ -70,13 +66,13 @@ const ServicesWeOffer = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
-              <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1120]">
+              <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
                 {data.serviceHighlights.title}
               </h2>
-              <div className="w-10 sm:w-12 h-1 bg-[#e63946] rounded-full"></div>
+              <div className="w-10 sm:w-12 h-1 bg-primary rounded-full"></div>
             </div>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               {data.serviceHighlights.description}
             </p>
           </div>
@@ -86,14 +82,14 @@ const ServicesWeOffer = () => {
               <div className="space-y-8">
                 {data.serviceHighlights.highlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#e63946] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                       <CheckCircle className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#0b1120] mb-2 text-base sm:text-lg">
+                      <h4 className="font-bold mb-2 text-base sm:text-lg">
                         {highlight.title}
                       </h4>
-                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                         {highlight.description}
                       </p>
                     </div>

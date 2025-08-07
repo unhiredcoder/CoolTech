@@ -21,7 +21,7 @@ const Testimonial: React.FC = () => {
   const testimonialData = data.testimonialSection as TestimonialData;
 
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
-    
+
     loop: true,
     breakpoints: {
       "(min-width: 768px)": {
@@ -46,14 +46,14 @@ const Testimonial: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-8">
         {/* Heading */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1120] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             {headingParts.before}
-            <span className="rounded-full px-3 sm:px-4 py-1.5 sm:py-2 bg-[#e63946] text-white inline-block shadow-md">
+            <span className="rounded-full px-3 sm:px-4 py-1.5 sm:py-2 bg-primary inline-block shadow-md">
               {testimonialData.highlightWord}
             </span>
             {headingParts.after}
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto">
             {testimonialData.subtext}
           </p>
         </div>
@@ -75,14 +75,14 @@ const Testimonial: React.FC = () => {
                   </div>
 
                   {/* Quote */}
-                  <p className="text-gray-600 mb-5 sm:mb-6 italic leading-relaxed text-sm sm:text-base">
+                  <p className="text-muted-foreground mb-5 sm:mb-6 italic leading-relaxed text-sm sm:text-base">
                     {testimonial.text}
                   </p>
 
                   {/* Name + Role */}
                   <div className="flex items-center justify-center gap-3">
                     <div>
-                      <div className="font-semibold text-[#0b1120] text-sm sm:text-base">
+                      <div className="font-semibold text-sm sm:text-base">
                         {testimonial.name}
                       </div>
                       <div className="text-sm text-gray-500">{testimonial.role}</div>

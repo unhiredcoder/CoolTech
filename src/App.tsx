@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Navbar } from "./components/navbar/navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -15,7 +15,7 @@ import FaqSection from "./components/Faq";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white font-['Poppins',sans-serif] ">
+      <div className="min-h-screen">
         <Navbar />
         <Routes>
           {/* Home Page */}
@@ -28,7 +28,7 @@ function App() {
                 <WhyChooseUs />
                 <Testimonial />
                 <ContactUs />
-                <FaqSection/>
+                <FaqSection />
               </>
             }
           />
@@ -39,6 +39,7 @@ function App() {
           <Route path="/about/overview" element={<Mission />} />
           <Route path="/about/services" element={<ServicesWeOffer />} />
           <Route path="/faq" element={<FaqSection />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
 
         <Footer />
