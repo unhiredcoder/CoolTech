@@ -61,7 +61,7 @@
                 "style": "secondary"
             }
         ],
-        "heroImage": "/src/assets/image.png",
+        "heroImage": "/src/assets/heroImage.png",
         "stats": [
             {
                 "icon": "Users",

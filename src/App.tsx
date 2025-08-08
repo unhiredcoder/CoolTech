@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar/navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
+import { Hero } from "./components/Hero/hero";
+import { Services } from "./components/services/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
