@@ -2,16 +2,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button"
 import { HelpCircle, MessageCircle } from "lucide-react"
 import faqData from "../lib/data.json" // Adjust path as per your folder structure
-import { useLocation } from "react-router-dom"
 
 const FaqSection = () => {
     const { faq } = faqData
-    const location = useLocation();
-
-    const isFAQ = location.pathname.includes('/faq');
 
     return (
-        <section className={`${isFAQ ? 'mt-10 ' : ''}py-20 bg-white`}>
+        <section className={`page`}>
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-3 mb-4">
@@ -29,12 +25,12 @@ const FaqSection = () => {
                             <AccordionItem
                                 key={index}
                                 value={`item-${index + 1}`}
-                                className="bg-white  border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 px-6 py-2"
+                                className="bg-background border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 px-6 py-2"
                             >
-                                <AccordionTrigger className="bg-white text-left hover:text-[#e63946] transition-colors duration-300 text-lg font-semibold hover:no-underline">
+                                <AccordionTrigger className="text-lg hover:text-primary">
                                     {item.question}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-muted-foreground leading-relaxed pt-2 pb-4">
+                                <AccordionContent className="text-muted-foreground leading-relaxed pt-2 pb-4 text-base md:text-lg">
                                     {item.answer}
                                 </AccordionContent>
                             </AccordionItem>
@@ -43,7 +39,7 @@ const FaqSection = () => {
 
                     {/* CTA Button */}
                     <div className="text-center mt-12">
-                        <Button className="bg-gradient-to-r from-[#e63946] to-[#dc2626] hover:from-[#dc2626] hover:to-[#b91c1c] font-bold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl hover:shadow-[#e63946]/25 transition-all transform hover:scale-105 hover:-translate-y-1">
+                        <Button className="bg-primary font-bold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl hover:shadow-[#e63946]/25 transition-all transform hover:scale-105 hover:-translate-y-1">
                             <MessageCircle className="w-5 h-5 mr-2" />
                             Still have questions?
                         </Button>

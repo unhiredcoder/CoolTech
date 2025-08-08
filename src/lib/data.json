@@ -12,6 +12,28 @@
                 "href": "/"
             },
             {
+                "label": "About Us",
+                "href": "/",
+                "dropdown": [
+                    {
+                        "label": "Company Overview",
+                        "href": "/about/overview"
+                    },
+                    {
+                        "label": "Directors",
+                        "href": "/about/directors"
+                    },
+                    {
+                        "label": "Awards & Achievements",
+                        "href": "/about/achievements"
+                    },
+                    {
+                        "label": "Services We Offer",
+                        "href": "/about/services"
+                    }
+                ]
+            },
+            {
                 "label": "Services",
                 "href": "/services"
             },
@@ -22,24 +44,6 @@
             {
                 "label": "Contact",
                 "href": "/contact"
-            }
-        ],
-        "aboutDropdown": [
-            {
-                "label": "Company Overview",
-                "href": "/about/overview"
-            },
-            {
-                "label": "Directors",
-                "href": "/about/directors"
-            },
-            {
-                "label": "Awards & Achievements",
-                "href": "/about/achievements"
-            },
-            {
-                "label": "Services We Offer",
-                "href": "/about/services"
             }
         ]
     },
@@ -77,7 +81,7 @@
     },
     "servicesSection": {
         "badgeText": "Our Services",
-        "heading": "Our AC Services",
+        "heading": "Our Services",
         "subtext": "Comprehensive air conditioning solutions for all your cooling needs",
         "services": [
             {
@@ -167,8 +171,8 @@
         ]
     },
     "contactSection": {
-        "heading": "Contact Us",
-        "subtext": "Get in touch with us for any questions, service requests, or to learn more about our AC solutions",
+        "heading": "Get In Touch",
+        "subtext": "Have questions, feedback, or partnership inquiries? We'd love to hear from you.",
         "formTitle": "Send Us a Message",
         "formSubtitle": "We'll get back to you within 24 hours",
         "address": {
@@ -183,8 +187,8 @@
             "phone": "+91 98765 43210",
             "email": "support@cooltech.in",
             "businessHours": [
-                "Mon–Fri: 9:00 AM – 6:00 PM",
-                "Sat–Sun: 10:00 AM – 4:00 PM"
+                "Mon-Fri: 9:00 AM - 6:00 PM",
+                "Sat-Sun: 10:00 AM - 4:00 PM"
             ]
         },
         "socialLinks": [
@@ -451,11 +455,13 @@
         "ctaButtons": [
             {
                 "text": "Explore Our Work",
-                "type": "primary"
+                "type": "primary",
+                "link": "/services"
             },
             {
-                "text": "Get Quote",
-                "type": "outline"
+                "text": "Request a Quote",
+                "type": "outline",
+                "link": "/contact"
             }
         ]
     },

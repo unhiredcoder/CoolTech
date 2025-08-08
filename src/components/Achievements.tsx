@@ -51,15 +51,15 @@ const Achievements = () => {
             </div>
 
             {/* Project Stats */}
-            <section className="py-16 sm:py-20 bg-white relative -mt-10 sm:-mt-16">
+            <section className="py-16 sm:py-20 relative -mt-10 sm:-mt-16">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-5xl mx-auto">
                         {projectStats.map((stat, idx) => {
                             const Icon = iconComponents[stat.icon as keyof typeof iconComponents];
                             return (
-                                <Card key={idx} className="text-center p-6 sm:p-8 bg-white shadow-xl rounded-3xl border-0">
+                                <Card key={idx} className="text-center p-6 sm:p-8 shadow-xl rounded-3xl border-0">
                                     <div className={`w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-r ${stat.iconGradient.join(' ')} rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4`}>
-                                        <Icon className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+                                        <Icon className="w-6 sm:w-8 h-6 sm:h-8" />
                                     </div>
                                     <div className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">{stat.number}</div>
                                     <div className="text-muted-foreground text-sm sm:text-base">{stat.label}</div>
@@ -71,7 +71,7 @@ const Achievements = () => {
             </section>
 
             {/* Gallery */}
-            <section className="py-16 sm:py-20 bg-gradient-to-br from-[#f6f7fb] to-[#eaf6fb]/50">
+            <section className="py-16 sm:py-20">
                 <div className="container mx-auto">
                     <div className="text-center mb-12 sm:mb-16">
                         <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
@@ -84,13 +84,13 @@ const Achievements = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                         {images.map((item, index) => (
-                            <Card key={index} className="group rounded-none border-none shadow-none bg-none">
+                            <Card key={index} className="group rounded-none border-none shadow-none bg-none p-0">
                                 <div className="relative overflow-hidden aspect-[16/9]">
                                     <img src={item.url} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                     <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <h4 className="font-bold text-sm sm:text-lg">{item.title}</h4>
-                                        <p className="text-xs sm:text-sm">{item.description}</p>
+                                        <h4 className="font-bold text-sm sm:text-lg text-background">{item.title}</h4>
+                                        <p className="text-xs sm:text-sm text-muted">{item.description}</p>
                                     </div>
                                 </div>
                             </Card>

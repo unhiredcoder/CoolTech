@@ -34,7 +34,7 @@ export function Navbar() {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [sheetOpen, setSheetOpen] = useState(false);
 
-    const { logo, ctaButton, links, aboutDropdown } = data.navbar;
+    const { ctaButton, links } = data.navbar;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,39 +53,41 @@ export function Navbar() {
 
     return (
         <>
-            <nav className={`bg-background/25 backdrop-blur-sm shadow-sm border-b rounded-2xl fixed left-1/2 top-1 transform -translate-x-1/2 w-[96%] transition-transform duration-300 z-50 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
+            <nav className={`bg-background/60 backdrop-blur-sm shadow-sm border-b rounded-2xl fixed left-1/2 top-1 transform -translate-x-1/2 w-[96%] transition-transform duration-300 z-50 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
                 <div className="container px-4 py-4 flex items-center justify-between">
                     {/* Logo */}
-                    <Navlogo
-                        text={logo.title}
-                    />
+                    <Link to={`/`}>
+                        <Navlogo />
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
                         <NavigationMenu viewport={false}>
-                            <NavigationMenuList>
+                            <NavigationMenuList className="space-x-2 lg:space-x-4">
                                 {links.map((link, idx) => (
-                                    <NavigationMenuLink key={idx} className="text-base font-semibold" asChild>
-                                        <Link to={link.href}>
-                                            <div className="font-medium">{link.label}</div>
-                                        </Link>
-                                    </NavigationMenuLink>
+                                    link.dropdown ? (
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger className="bg-transparent text-base">About Us</NavigationMenuTrigger>
+                                            <NavigationMenuContent>
+                                                <ul className="grid w-[200px] gap-2">
+                                                    <li>
+                                                        {link.dropdown.map((item, idx) => (
+                                                            <NavigationMenuLink key={idx}>
+                                                                <Link to={item.href} className="w-full capitalize">{item.label}</Link>
+                                                            </NavigationMenuLink>
+                                                        ))}
+                                                    </li>
+                                                </ul>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                    ) : (
+                                        <NavigationMenuLink key={idx} className="text-base font-semibold" asChild>
+                                            <Link to={link.href}>
+                                                <div className="font-medium">{link.label}</div>
+                                            </Link>
+                                        </NavigationMenuLink>
+                                    )
                                 ))}
-
-                                <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="bg-transparent text-base">About Us</NavigationMenuTrigger>
-                                    <NavigationMenuContent>
-                                        <ul className="grid w-[200px] gap-2">
-                                            <li>
-                                                {aboutDropdown.map((item, idx) => (
-                                                    <NavigationMenuLink key={idx}>
-                                                        <Link to={item.href} className="w-full capitalize">{item.label}</Link>
-                                                    </NavigationMenuLink>
-                                                ))}
-                                            </li>
-                                        </ul>
-                                    </NavigationMenuContent>
-                                </NavigationMenuItem>
                             </NavigationMenuList>
                         </NavigationMenu>
                     </nav>
@@ -110,32 +112,44 @@ export function Navbar() {
                             </SheetTrigger>
                             <SheetContent side="top" className="rounded-b-2xl">
                                 <div className="flex items-center justify-between mb-5 p-4">
-                                    <Navlogo
-                                        text={logo.title}
-                                    />
+                                    <Navlogo />
                                 </div>
 
                                 <nav className="flex flex-col gap-6 p-4">
                                     {links.map((link, idx) => (
-                                        <Link key={idx} to={link.href} className="font-semibold" onClick={handleLinkClick}>
-                                            {link.label}
-                                        </Link>
+                                        link.dropdown ? (
+                                            <Accordion type="single" defaultValue="item-1" collapsible>
+                                                <AccordionItem value="item-1">
+                                                    <AccordionTrigger className="p-0 text-base font-semibold">About Us</AccordionTrigger>
+                                                    <AccordionContent className="flex-col">
+                                                        {link.dropdown.map((subLink) => (
+                                                            <Link
+                                                                to={subLink.href}
+                                                                className="text-base"
+                                                                onClick={() => { setSheetOpen(false); }}
+                                                            >
+                                                                <div className="py-1 px-2">
+                                                                    {subLink.label}
+                                                                </div>
+                                                            </Link>
+                                                        ))}
+                                                    </AccordionContent>
+                                                </AccordionItem>
+                                            </Accordion>
+                                        ) : (
+                                            <Link
+                                                key={idx}
+                                                to={link.href}
+                                                className="font-semibold"
+                                                onClick={() => {
+                                                    handleLinkClick();
+                                                    setSheetOpen(false);
+                                                }}
+                                            >
+                                                {link.label}
+                                            </Link>
+                                        )
                                     ))}
-
-                                    <Accordion type="single" defaultValue="item-1" collapsible>
-                                        <AccordionItem value="item-1">
-                                            <AccordionTrigger className="text-base">About Us</AccordionTrigger>
-                                            <AccordionContent className="flex-col pt-0">
-                                                {aboutDropdown.map((item, idx) => (
-                                                    <Link key={idx} to={item.href} className="text-muted-foreground p-2" onClick={handleLinkClick}>
-                                                        <div className="text-base">
-                                                            {item.label}
-                                                        </div>
-                                                    </Link>
-                                                ))}
-                                            </AccordionContent>
-                                        </AccordionItem>
-                                    </Accordion>
 
                                     <Button onClick={handleLinkClick}>
                                         {ctaButton}
@@ -146,7 +160,7 @@ export function Navbar() {
                         </Sheet>
                     </div>
                 </div >
-            </nav>
+            </nav >
         </>
     );
 };
