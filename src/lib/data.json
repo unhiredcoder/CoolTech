@@ -164,6 +164,21 @@
                 "role": "Business Owner"
             },
             {
+                "text": "Fast, reliable, and affordable. They installed our new AC system perfectly and provided great maintenance tips. Outstanding customer service!",
+                "name": "Mike Davis",
+                "role": "Business Owner"
+            },
+            {
+                "text": "Fast, reliable, and affordable. They installed our new AC system perfectly and provided great maintenance tips. Outstanding customer service!",
+                "name": "Mike Davis",
+                "role": "Business Owner"
+            },
+            {
+                "text": "Fast, reliable, and affordable. They installed our new AC system perfectly and provided great maintenance tips. Outstanding customer service!",
+                "name": "Mike Davis",
+                "role": "Business Owner"
+            },
+            {
                 "text": "Professional team with fair pricing. They diagnosed the problem quickly and had our AC running perfectly. Will definitely use them again!",
                 "name": "Lisa Chen",
                 "role": "Property Manager"
@@ -450,20 +465,10 @@
         ]
     },
     "companyOverview": {
-        "heading": "Areas We Cater",
-        "subheading": "Comprehensive HVAC solutions across diverse sectors - from infrastructure projects to specialized installations, we deliver excellence in every domain.",
-        "ctaButtons": [
-            {
-                "text": "Explore Our Work",
-                "type": "primary",
-                "link": "/services"
-            },
-            {
-                "text": "Request a Quote",
-                "type": "outline",
-                "link": "/contact"
-            }
-        ]
+        "missiontitle": "Our Missions",
+        "missionparagraph": "At CoolTech, our mission is to provide exceptional air conditioning services that ensure optimal comfort for homes and businesses. We are committed to delivering reliable, efficient, and cost-effective solutions while maintaining the highest standards of professionalism and customer satisfaction. We believe that everyone deserves to live and work in a comfortable environment, and we strive to make that possible through our expert services, cutting-edge technology, and unwavering dedication to excellence.",
+        "visiontitle": "Our vision",
+        "visionparagraph": "To be the most trusted and preferred AC service provider in the region, known for our innovation, reliability, and customer-centric approach. We envision a future where every customer experiences seamless comfort through our advanced HVAC solutions. We aim to continuously evolve with technology and industry best practices, setting new standards for service quality and environmental responsibility in the HVAC industry."
     },
     "expertiseAreas": [
         {

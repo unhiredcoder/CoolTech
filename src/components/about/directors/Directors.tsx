@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import data from "../lib/data.json";
+import data from "../../../lib/data.json";
 
 export default function Directors() {
     const { title, subtitle, list } = data.directors;

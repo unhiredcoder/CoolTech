@@ -26,7 +26,7 @@ export function Services() {
             <div>
                 {/* ✅ Section header with badge, title, and subtext */}
                 <div className="text-center mb-16">
-                    <Badge className="bg-primary/15 text-primary mb-6 text-sm px-4">
+                    <Badge className="bg-primary/20 text-popover-foreground  mb-6 text-sm px-4 py-2 backdrop-blur-md">
                         {servicesData.badgeText}
                     </Badge>
 
